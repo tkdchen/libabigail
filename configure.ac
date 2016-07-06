@@ -290,8 +290,8 @@ if test x$CHECK_DEPS_FOR_FEDABIPKGDIFF = xyes; then
   fi
 
   REQUIRED_PYTHON_MODULES_FOR_FEDABIPKGDIFF="\
-   argparse logging os re subprocess sys itertools urlparse \
-   unittest xdg koji mock StringIO rpm"
+   argparse logging os re subprocess sys urlparse \
+   xdg koji mock StringIO rpm collections imp tempfile"
 
   if test -x$ENABLE_FEDABIPKGDIFF != xno; then
     AX_CHECK_PYTHON_MODULES([$REQUIRED_PYTHON_MODULES_FOR_FEDABIPKGDIFF],
